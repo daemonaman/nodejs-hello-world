@@ -16,7 +16,7 @@ pipeline {
                 
                 stage ("Testing the Build"){
                         steps{
-                                sh 'sudo docker run -dit --name admin-web -p 3000:3000 node-hello:latest'
+                                sh 'sudo docker run -dit --name node-js -p 3000:3000 node-hello:latest'
                         }
                 }
         }
